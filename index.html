@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your asayeelabs Interactive Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        nav {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            transition: color 0.3s ease-out;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        section {
+            padding: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        #logo {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            border-radius: 50%;
+            animation: rotate 4s linear infinite;
+        }
+
+        .blog-post {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-out;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Interactive Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <div id="logo"></div>
+        <h2>Welcome to Your asayeelabs Interactive Website</h2>
+        <p>This is a dynamic website template with animations and a blog section.</p>
+
+        <div class="blog-post">
+            <h3>Blog Post Title 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna ac justo posuere facilisis.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h3>Blog Post Title 2</h3>
+            <p>Proin aliquet justo in lectus pretium, sit amet ullamcorper quam tincidunt. Integer nec est ac nunc dignissim dictum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <!-- Add more blog posts here -->
+    </section>
+</body>
+</html>
